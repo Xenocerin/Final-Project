@@ -9,15 +9,15 @@ body {
   h1 {
     letter-spacing: 5px;
     word-spacing: 3px;
-    padding: 5px;
+    padding: 3px;
     color: #ffffff;
     font-size: 200%;
   }
-  
+
   h2 {
     letter-spacing: 5px;
-    word-spacing: 3px;
-    padding: 5px;
+    word-spacing: 1px;
+    padding: 1px;
     color: #ffffff;
     font-size: 200%;
   }
