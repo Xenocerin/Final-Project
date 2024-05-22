@@ -1,18 +1,28 @@
-.body {
-    background-color: #c1e6ff;
+body {
+    background-color: #C5EAE7;
   }
   
-.minor-section {
-  padding: 11px;
-  margin-bottom: 10px;
-  border: solid 6px #6db4c4;
-  background-color: #ffffff;
-}
+  h1,h2,h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 
-.special {
-  background-color: rgb(175, 213, 240);
-  border: dotted 50px rgb(174, 182, 212);
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-}   
-    
+  h1 {
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    padding: 5px;
+    font-size: 200%;
+  }
+  
+  #content {
+    margin: 10;
+    padding: 10px;
+    border: solid 1px #C5EAE7;
+    background-color: #ffffff;
+  }
+
+  .minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #ffffff;
+    background-color: #C5EAE7;
+  }
