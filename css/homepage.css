@@ -14,6 +14,14 @@ body {
     font-size: 200%;
   }
   
+  h2 {
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 200%;
+  }
+  
   #content {
     margin: 10;
     padding: 10px;
