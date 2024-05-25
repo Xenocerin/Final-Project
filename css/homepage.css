@@ -25,6 +25,7 @@ body {
   #content {
     margin: 10;
     padding: 10px;
+    outline-color: #845b37;
     border: solid 1px #F9DCC4;
     background-color: #FEC89A;
   }
