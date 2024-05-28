@@ -25,6 +25,17 @@ h2 {
   font-size: 200%;
   margin-left: 550px
 }
+
+
+  h3 {
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    padding: 5px;
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 200%;
+    margin-left: 400px
+  }
 #leftside {
   letter-spacing: 2px;
   word-spacing: 0px;
@@ -49,7 +60,7 @@ h2 {
 }
 
 .imgs {
-  margin-left: 800px
+  margin-left: 450px
 }
 
 .minor-section {
