@@ -97,3 +97,28 @@ h2 {
 .myButton:active {
   background: #ffdeb2;
 }
+
+/* Style your modal CSS here */
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  
+}
+
+.modal {
+   /* center it */
+   width :300px; 
+   height :150px ;
+   margin :50% auto ; 
+   position:relative; 
+
+   padding :20px ; 
+   background-color:white; 
+
+}
+
+/*.close-button {} put here*/
