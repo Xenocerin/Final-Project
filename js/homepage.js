@@ -14,7 +14,7 @@ document.addEventListener("click", function(e) {
 
 document.addEventListener("DOMContentLoaded", function() {
     var searchBar = document.getElementById("input");
-    var divsToFilter = document.querySelectorAll(".minor-section");
+    var divsToFilter = document.querySelectorAll(".recipe");
 
     searchBar.addEventListener("input", function() {
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-$(".minor-section").append("<button class='favorites'>Add to favorites</button>");
+$(".recipe").append("<button class='favorites'>Add to favorites</button>");
 
 
 $(".favorites").click(function(){
