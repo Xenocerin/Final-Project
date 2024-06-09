@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-$(".minor-section").append("<button class='favorites'>Add to favorites</button>");
+$(".recipe").append("<button class='favorites'>Add to favorites</button>");
 
 
 $(".favorites").click(function(){
