@@ -7,34 +7,61 @@ function closeModal() {
 }
 
 document.addEventListener("click", function(e) {
-     if (e.target.matches('.modal-wrapper')) { // outside click
+     if (e.target.matches('.modal-wrapper')) {
         closeModal();
      }
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Get references to the search bar input and the divs to be filtered
     var searchBar = document.getElementById("input");
     var divsToFilter = document.querySelectorAll(".minor-section");
 
-    // Add event listener for input event on the search bar
     searchBar.addEventListener("input", function() {
-        // Get the value entered in the search bar and convert it to lowercase
+
         var searchText = searchBar.value.toLowerCase();
 
-        // Loop through each div to filter
         divsToFilter.forEach(function(div) {
-            // Get the div's ID and convert it to lowercase
+        
             var divId = div.id.toLowerCase();
 
-            // Check if the div ID contains the search text
+           
             if (divId.includes(searchText)) {
-                // If it matches, display the div
+                
                 div.style.display = "block";
             } else {
-                // If it doesn't match, hide the div
+              
                 div.style.display = "none";
             }
         });
     });
+});
+$(".minor-section").append("<button class='favorites'>Add to favorites</button>");
+
+
+$(".favorites").click(function(){
+    if ($(this).parent().textContent="Favorite"){
+         $(this).parent().clone().appendTo('#myModal')
+    }
+  });
+
+  $(".favorites").click(function(){
+    $(document).on("click", "#myModal .favorites", function(){
+    if ($(this).parent().textContent="Remove Favorite"){
+        $(document).on("click", "#myModal .favorites", function(){
+            $(this).parent().remove();
+        });
+    }
+  });
+  });
+
+
+
+
+
+  document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('favorites')) {
+      event.target.textContent = "Remove Favorite";
+    }
+
+ 
 });
