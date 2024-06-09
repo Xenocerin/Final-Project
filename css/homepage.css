@@ -73,7 +73,6 @@ h2 {
   border-radius: 60px;
 }
 
-
 .myButton {
   color: rgb(0, 0, 0);
   font-size: 13px;
@@ -104,7 +103,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
+  right:50%;
   bottom:0;
   
 }
@@ -113,7 +112,7 @@ h2 {
    /* center it */
    width :300px; 
    height :150px ;
-   margin :50% auto ; 
+   margin :auto ; 
    position:relative; 
 
    padding :20px ; 
