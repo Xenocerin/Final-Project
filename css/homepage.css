@@ -73,6 +73,20 @@ h2 {
   border-radius: 60px;
 }
 
+<<<<<<< Updated upstream
+=======
+.recipe{
+  padding: 10px;
+  margin-bottom: 30px;
+  border: double 8px #fcc69b;
+  background-color: #ffffff;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 60px;
+}
+
+
+>>>>>>> Stashed changes
 .myButton {
   color: rgb(0, 0, 0);
   font-size: 13px;

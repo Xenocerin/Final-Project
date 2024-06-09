@@ -8,6 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body id="body">
     <section>
         <div>
@@ -29,9 +30,18 @@
             <br>
             <div class="minor-section">
                 <h2>Welcome!</h2>
-                <p>Hello! We are the interactive cookbook “Toolna”! Toolna is a space where you can search for all kinds of recipes as well as post your own to share with the community. We wanted to enhance the user experience beyond that of a traditional cookbook. This site offers step-by-step instructions to help users manage cooking times efficiently. Using our platform, users have easy access to hundreds of recipes. Enjoy!</p>
+                <p>Hello! We are the interactive cookbook “Toolna”! Toolna is a space where you can search for all kinds
+                    of recipes as well as post your own to share with the community. We wanted to enhance the user
+                    experience beyond that of a traditional cookbook. This site offers step-by-step instructions to help
+                    users manage cooking times efficiently. Using our platform, users have easy access to hundreds of
+                    recipes. Enjoy!</p>
             </div>
-            <div class="minor-section" id="garlic-bread">
+            <div>
+                <button id="button">Search</button>
+                <div id="output"></div>
+            </div>
+
+            <div class="recipe" id="garlic-bread">
                 <h2>Garlic Bread</h2>
                 <div class="imgs">
                     <img class="Garlic Bread" src="./img/Garlic Bread.jpg" width="400">
@@ -72,7 +82,7 @@
                     Let cool and enjoy!
                 </p>
             </div>
-            <div class="minor-section" id="cookies-n-cream">
+            <div class="recipe" id="cookies-n-cream">
                 <h3>Cookies and Cream Ice Cream</h3>
                 <div class="imgs">
                     <!-- Replace the src attribute value with the correct path to your image -->
@@ -98,23 +108,64 @@
                     </li>
                 </ul>
                 <h2>Directions</h2>
-                <p>In a chilled bowl, whisk together milk and sugar until sugar is dissolved. Stir in heavy cream and vanilla.
-                    Pour mixture into ice cream maker’s freezer bowl. Let it churn for about 20 minutes (or according to your machine’s manufacturer instructions.)
-                    Add in the chopped Oreos and keep churning for another 5-10 minutes or until mixture is thick and creamy. If your machine’s instructions vary for add-ins, please follow those instructions instead.
-                    Use rubber spatula to transfer ice cream to a freezable container. Cover airtight and place in freezer about 2 hours to set up firmly. 
+                <p>In a chilled bowl, whisk together milk and sugar until sugar is dissolved. Stir in heavy cream and
+                    vanilla.
+                    Pour mixture into ice cream maker’s freezer bowl. Let it churn for about 20 minutes (or according to
+                    your machine’s manufacturer instructions.)
+                    Add in the chopped Oreos and keep churning for another 5-10 minutes or until mixture is thick and
+                    creamy. If your machine’s instructions vary for add-ins, please follow those instructions instead.
+                    Use rubber spatula to transfer ice cream to a freezable container. Cover airtight and place in
+                    freezer about 2 hours to set up firmly.
                     Enjoy!
                 </p>
-        </div>
-        <body>
-            <div class="modal-wrapper" id="modalWrapper">
-              <div class="modal" id="myModal">
-                  <button class='close-btn' onclick='closeModal()'>&times;</button> 
-                 
-                  Pop-up
-              </div>
             </div>
-            
-            <script src="./js/homepage.js"></script>
+            <div class="recipe" id="cookies-n-cream">
+                <h2>Tuna Sub</h2>
+                <div class="imgs"></div>
+                <img class="Cookies and Cream Ice Cream"
+                    src="https://mail.google.com/mail/u/0?ui=2&ik=a9b46a9faa&attid=0.1&permmsgid=msg-a:r-4065944613127469655&th=18fbd3b4113b9731&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8BAre4br2f1Ha24-LnLwixu5zYjr3mp237T0x5NDPC5SeSkE1_ecto3Zue8NF-LOheG4AW0TC2W5uOP5OCNBcW_At5CClf4eidcRW56aiaZ-vMfjThVd5mY-Y&disp=emb&realattid=ii_lwpu40py0"
+                    width="400" </div>
+                <h2> Prep Time:</h2>
+                <p> 30 mins, total time: 30 mins; yields 2 servings</p>
+                <ul>
+                    <li>
+                        <p> 1 5-ounce can tuna in water, drained</p>
+                    </li>
+                    <li>
+                        <p>1 tablespoon minced onion</p>
+                    </li>
+                    <li>
+                        <p>1/4 cup minced celery</p>
+                    </li>
+                    <li>
+                        <p>Pinch of ground black pepper</p>
+                    </li>
+                    <li>
+                        <p>1 tablespoon mayonnaise</p>
+                    </li>
+                    <p>1 long sandwich roll </p>
+                    <p></p>
+                </ul>
+                <h2>Directions</h2>
+                <p>Place tuna in a small bowl. With a fork, flake it into small pieces. Add onion, celery, salt, pepper,
+                    and mayonnaise. Mix until combined.
+                </p>
+                <p> With a serrated or bread knife, slice the roll length-wise about three quarters of the way through,
+                    leaving the opposite side uncut. Open the roll like a book and place lettuce, cheese, and tuna
+                    mixture inside. Close roll and wrap in plastic wrap until ready to eat.</p>
+            </div>
+
+            <body>
+                <div class="modal-wrapper" id="modalWrapper">
+                    <div class="modal" id="myModal">
+                        <button class='close-btn' onclick='closeModal()'>&times;</button>
+
+                        Pop-up
+                    </div>
+                </div>
+
+                <script src="./js/homepage.js"></script>
     </section>
 </body>
+
 </html>
