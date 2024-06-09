@@ -25,6 +25,17 @@ h2 {
   font-size: 200%;
   margin-left: 550px
 }
+
+
+  h3 {
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    padding: 5px;
+    color: #000000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 200%;
+    margin-left: 400px
+  }
 #leftside {
   letter-spacing: 2px;
   word-spacing: 0px;
@@ -49,7 +60,7 @@ h2 {
 }
 
 .imgs {
-  margin-left: 800px
+  margin-left: 450px
 }
 
 .minor-section {
@@ -61,7 +72,6 @@ h2 {
   margin-right: 60px;
   border-radius: 60px;
 }
-
 
 .myButton {
   color: rgb(0, 0, 0);
@@ -86,3 +96,28 @@ h2 {
 .myButton:active {
   background: #ffdeb2;
 }
+
+/*modal, don't touch*/
+.modal-wrapper {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  
+}
+
+.modal {
+   width :900px; 
+   height :450px ;
+   margin :auto ; 
+   position:relative; 
+
+   padding :20px ; 
+   background-color:white; 
+
+}
+
+/*.close-button {} put here*/
