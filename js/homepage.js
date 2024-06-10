@@ -128,3 +128,45 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error("Error fetching the image:", error));
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const randomDiv = document.querySelector('.favorite');
+    const replaceBtn = document.getElementById('replaceBtn');
+    const container = document.querySelector('.target-div');
+    
+    
+    function pickRandomDiv() {
+      const divs = document.querySelectorAll('.random-div');
+      const randomIndex = Math.floor(Math.random() * divs.length);
+      const randomDivClone = divs[randomIndex].cloneNode(true);
+      container.replaceChild(randomDivClone, randomDiv);
+    }
+    
+    
+    replaceBtn.addEventListener('click', pickRandomDiv);
+  });
+
+  function replaceRandomDiv() {
+    // Select all divs with the specified class
+    var divs = document.querySelectorAll('.recipe');
+    
+    // Choose a random div from the selected ones
+    var randomIndex = Math.floor(Math.random() * divs.length);
+    var randomDiv = divs[randomIndex];
+    
+    // Clone the selected div
+    var clonedDiv = randomDiv.cloneNode(true);
+    
+    // Select the div where the clone will be appended
+    var targetDiv = document.querySelector('.target-div');
+    
+    // Remove all children from the target div
+    targetDiv.innerHTML = '';
+    
+    // Append the cloned div to the target div
+    targetDiv.appendChild(clonedDiv);
+}
+
+// Attach the function to a button click event
+document.getElementById('replaceBtn').addEventListener('click', replaceRandomDiv);
