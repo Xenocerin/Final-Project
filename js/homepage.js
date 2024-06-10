@@ -65,3 +65,39 @@ $(".favorites").click(function(){
 
  
 });
+
+
+// Pexels API
+//API key: kMU5WuNRNGA2kCazUiKRrLox6ZsYUUZiKLNVlrUTNO5cXGji9EBx4GnA
+document.addEventListener("DOMContentLoaded", function() {
+    const apiKey = "kMU5WuNRNGA2kCazUiKRrLox6ZsYUUZiKLNVlrUTNO5cXGji9EBx4GnA";
+    const imageUrl = "https://api.pexels.com/v1/search?query=food&per_page=30";
+
+    fetch(imageUrl, {
+        headers: {
+            Authorization: apiKey
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const randomIndex = Math.floor(Math.random() * data.photos.length); // Select a random index
+        const imageUrl = data.photos[randomIndex].src.large; 
+        const welcomeDiv = document.getElementById("welcome");
+
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        img.alt = data.photos[0].alt;
+        img.style.width = "60%";
+        img.style.height = "60%";
+        img.style.objectFit = "cover";
+
+        welcomeDiv.innerHTML = ""; // Clear any existing content
+        welcomeDiv.appendChild(img);
+        welcomeDiv.style.display = "flex";
+        welcomeDiv.style.justifyContent = "center";
+        welcomeDiv.style.alignItems = "center";
+
+        welcomeDiv.appendChild(img);  
+    })
+    .catch(error => console.error("Error fetching the image:", error));
+});
