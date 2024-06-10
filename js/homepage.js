@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.createElement("img");
         img.src = imageUrl;
         img.alt = data.photos[0].alt;
-        img.style.width = "60%";
-        img.style.height = "60%";
+        img.style.width = "400px";
+        img.style.height = "400px";
         img.style.objectFit = "cover";
 
         welcomeDiv.innerHTML = ""; // Clear any existing content
