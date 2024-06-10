@@ -11,7 +11,7 @@ document.addEventListener("click", function (e) {
         closeModal();
     }
 });
-
+//help
 
 function openFav() {
     document.getElementById('modalWrapper2').style.display = 'block';
