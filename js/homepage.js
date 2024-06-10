@@ -94,8 +94,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const apiKey = "kMU5WuNRNGA2kCazUiKRrLox6ZsYUUZiKLNVlrUTNO5cXGji9EBx4GnA";
     const imageUrl = "https://api.pexels.com/v1/search?query=food&per_page=30";
@@ -128,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error("Error fetching the image:", error));
 });
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const randomDiv = document.querySelector('.favorite');
