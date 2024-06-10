@@ -76,6 +76,10 @@ h3 {
   margin-left: 35%;
 }
 
+.foodpics{
+  margin-left: 20%;
+}
+
 .sizing {
   padding-left: 100px;
 }
@@ -189,4 +193,12 @@ h3 {
   border: 2px rgba(255, 196, 128, 0.84);
   display: inline-block;
   margin-left: 3%;
+}
+
+.chicken {
+margin-left: 34%
+}
+
+.tunasub {
+  margin-left: 18%
 }
