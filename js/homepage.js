@@ -26,7 +26,7 @@ document.addEventListener("click", function (e) {
         closeModal2();
     }
 });
-
+//=)
 
 function openCon() {
     document.getElementById('modalWrapper3').style.display = 'block';
