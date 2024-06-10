@@ -13,13 +13,16 @@
     <section>
         <div>
             <main id="content">
-                <div class="imgsection">
+                <div class="imgs">
                     <img class="Toolna" src="./img/Toolna.png" width="255">
-                    <br>
-                    <br>
+                    </div>
+                    <div class="imgsection">
                     <button onclick='openModal()' class="myButton">Favorites</button>
-                    <button class="myButton"><a href="./random/index.html">Random</a></button>
-                    <br><br> <input type="text" id="input">
+                    <button onclick='openModal()' class="myButton">Random</button>
+                    <button onclick='openModal()' class="myButton">Contact Us</button>
+                    <br>
+                    <br>
+                    <input type="text" id="input">
                     <button id="button">Search</button>
                     <div id="output"></div>
                 </div>
@@ -183,9 +186,9 @@
                 Fold down the top to close burrito. Pick it up, holding the bottom and front seam closed.
             </p>
         </ol>
-               <p>Spread guacamole on tortilla. Layer cheese on top of guacamole.</p>
-                Place bacon on top of cheese. Fold the top and bottom of the tortilla toward the middle. Then roll tortilla from
-                left to right to close. Wrap in plastic wrap until ready to eat. </p>
+        <p>Spread guacamole on tortilla. Layer cheese on top of guacamole.</p>
+        Place bacon on top of cheese. Fold the top and bottom of the tortilla toward the middle. Then roll tortilla from
+        left to right to close. Wrap in plastic wrap until ready to eat. </p>
     </div>
     <div class="recipe" id="cookies and cream">
         <h3>Cookies and Cream Ice Cream</h3>
@@ -406,49 +409,48 @@
         <div class="imgs">
             <h2>Tuna Sub</h2>
             <img class="Tuna Sub" src="img/Tuna Sandwhich.jpeg" width="400">
-            </div>
-            <h1>Prep Time:</h1>
-            <p> 30 mins, total time: 30 mins; yields 2 servings</p>
-            <ul>
-                <li>
-                    <p> 1 5-ounce can tuna in water, drained</p>
-                </li>
-                <li>
-                    <p>1 tablespoon minced onion</p>
-                </li>
-                <li>
-                    <p>1/4 cup minced celery</p>
-                </li>
-                <li>
-                    <p>Pinch of ground black pepper</p>
-                </li>
-                <li>
-                    <p>1 tablespoon mayonnaise</p>
-                </li>
-                <p>1 long sandwich roll </p>
-                <p></p>
-            </ul>
-            <h1>Directions</h1>
-            <p>Place tuna in a small bowl. With a fork, flake it into small pieces. Add onion, celery, salt, pepper,
-                and mayonnaise. Mix until combined.
-            </p>
-            <p>With a serrated or bread knife, slice the roll length-wise about three quarters of the way through,
-                leaving the opposite side uncut. Open the roll like a book and place lettuce, cheese, and tuna
-                mixture inside. Close roll and wrap in plastic wrap until ready to eat.</p>
         </div>
+        <h1>Prep Time:</h1>
+        <p> 30 mins, total time: 30 mins; yields 2 servings</p>
+        <ul>
+            <li>
+                <p> 1 5-ounce can tuna in water, drained</p>
+            </li>
+            <li>
+                <p>1 tablespoon minced onion</p>
+            </li>
+            <li>
+                <p>1/4 cup minced celery</p>
+            </li>
+            <li>
+                <p>Pinch of ground black pepper</p>
+            </li>
+            <li>
+                <p>1 tablespoon mayonnaise</p>
+            </li>
+            <p>1 long sandwich roll </p>
+            <p></p>
+        </ul>
+        <h1>Directions</h1>
+        <p>Place tuna in a small bowl. With a fork, flake it into small pieces. Add onion, celery, salt, pepper,
+            and mayonnaise. Mix until combined.
+        </p>
+        <p>With a serrated or bread knife, slice the roll length-wise about three quarters of the way through,
+            leaving the opposite side uncut. Open the roll like a book and place lettuce, cheese, and tuna
+            mixture inside. Close roll and wrap in plastic wrap until ready to eat.</p>
+    </div>
 
-        <body>
-            <div class="modal-wrapper" id="modalWrapper">
-                <div class="modal" id="myModal">
-                    <button class='close-btn' onclick='closeModal()'>&times;</button>
-                    <h2>Favorites</h2>
-                </div>
+    <body>
+        <div class="modal-wrapper" id="modalWrapper">
+            <div class="modal" id="myModal">
+                <button class='close-btn' onclick='closeModal()'>&times;</button>
+                <h2>Favorites</h2>
             </div>
-
-            <script src="./js/homepage.js"></script>
-            </section>
-        </body>
+        </div>
+        <script src="./js/homepage.js"></script>
         </section>
+    </body>
+    </section>
 </body>
 </main>
 
