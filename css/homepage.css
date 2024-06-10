@@ -46,16 +46,6 @@ h3 {
     margin-left: 440px
   }
 
-#leftside {
-  letter-spacing: 2px;
-  word-spacing: 0px;
-  padding: 5px;
-  color: #000000;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 200%;
-  margin-right: 0px
-}
-
 
 #content {
   margin: 1px;
@@ -66,13 +56,11 @@ h3 {
 }
 
 .imgsection {
-  margin-left: 40%
+  margin-left: 43%
 }
 
 .imgs {
-  margin-left: 50%;
-  top: 50%;
-  left: 50%;
+  margin-left: 42%;
 }
 
 .minor-section {
