@@ -12,6 +12,37 @@ document.addEventListener("click", function(e) {
      }
 });
 
+
+function openFav() {
+    document.getElementById('modalWrapper2').style.display = 'block';
+}
+
+function closeFav() {
+    document.getElementById('modalWrapper2').style.display = 'none';
+}
+
+document.addEventListener("click", function(e) {
+     if (e.target.matches('.modal-wrapper2')) {
+        closeModal2();
+     }
+});
+
+
+function openCon() {
+    document.getElementById('modalWrapper3').style.display = 'block';
+}
+
+function closeCon() {
+    document.getElementById('modalWrapper3').style.display = 'none';
+}
+
+document.addEventListener("click", function(e) {
+     if (e.target.matches('.modal-wrapper3')) {
+        closeModal3();
+     }
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var searchBar = document.getElementById("input");
     var divsToFilter = document.querySelectorAll(".recipe");
@@ -35,40 +66,36 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-$(".recipe").append("<button class='favorites'>Add to favorites</button>");
-
-
-$(".favorites").click(function(){
-    if ($(this).parent().textContent="Favorite"){
-         $(this).parent().clone().appendTo('#myModal')
+// Append the "Add to favorites" button to each recipe div
+document.querySelectorAll(".recipe").forEach(function(recipe) {
+    // Check if the recipe div already has the .favorites button
+    if (!recipe.querySelector(".favorites")) {
+        const button = document.createElement("button");
+        button.classList.add("favorites");
+        button.textContent = "Add to favorites";
+        recipe.appendChild(button);
     }
-  });
+});
 
-  $(".favorites").click(function(){
-    $(document).on("click", "#myModal .favorites", function(){
-    if ($(this).parent().textContent="Remove Favorite"){
-        $(document).on("click", "#myModal .favorites", function(){
-            $(this).parent().remove();
-        });
+// Listen for click events on elements with the .favorites class
+document.addEventListener("click", function(event) {
+    // Check if the clicked element has the .favorites class
+    if (event.target.classList.contains("favorites")) {
+        // Toggle the text content of the clicked button
+        if (event.target.textContent === "Add to favorites") {
+            event.target.textContent = "Remove Favorite";
+            // Clone and append the clicked button's parent node (recipe div) to #myModal
+            const parentDiv = event.target.parentNode.cloneNode(true);
+            document.getElementById("myModal").appendChild(parentDiv);
+        } else {
+            // Remove the parent node (recipe div) of the clicked button from #myModal
+            event.target.parentNode.remove();
+        }
     }
-  });
-  });
-
-
-
-
-
-  document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('favorites')) {
-      event.target.textContent = "Remove Favorite";
-    }
-
- 
 });
 
 
-// Pexels API
-//API key: kMU5WuNRNGA2kCazUiKRrLox6ZsYUUZiKLNVlrUTNO5cXGji9EBx4GnA
+
 document.addEventListener("DOMContentLoaded", function() {
     const apiKey = "kMU5WuNRNGA2kCazUiKRrLox6ZsYUUZiKLNVlrUTNO5cXGji9EBx4GnA";
     const imageUrl = "https://api.pexels.com/v1/search?query=food&per_page=30";
@@ -80,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(response => response.json())
     .then(data => {
-        const randomIndex = Math.floor(Math.random() * data.photos.length); // Select a random index
+        const randomIndex = Math.floor(Math.random() * data.photos.length);
         const imageUrl = data.photos[randomIndex].src.large; 
         const welcomeDiv = document.getElementById("welcome");
 
@@ -91,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
         img.style.height = "400px";
         img.style.objectFit = "cover";
 
-        welcomeDiv.innerHTML = ""; // Clear any existing content
+        welcomeDiv.innerHTML = "";
         welcomeDiv.appendChild(img);
         welcomeDiv.style.display = "flex";
         welcomeDiv.style.justifyContent = "center";

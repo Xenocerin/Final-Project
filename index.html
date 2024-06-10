@@ -18,8 +18,8 @@
                     </div>
                     <div class="imgsection">
                     <button onclick='openModal()' class="myButton">Favorites</button>
-                    <button onclick='openModal()' class="myButton">Random</button>
-                    <button onclick='openModal()' class="myButton">Contact Us</button>
+                    <button onclick='openFav()' class="myButton">Random</button>
+                    <button onclick='openCon()' class="myButton">Contact Us</button>
                     <br>
                     <br>
                     <input type="text" id="input">
@@ -349,7 +349,7 @@
     <div class="recipe" id="chicken chili">
         <h2>Chicken Chili</h2>
         <div class="imgs">
-            <img class="Chicken Noodle Soup" src="img/Easy-chicken-chili-8.jpg" width="400" </div>
+            <img class="Chicken Noodle Soup" src="img/Easy-chicken-chili-8.jpg" width="400">
         </div>
 
         <h1>Prep Time:</h1>
@@ -445,6 +445,42 @@
             <div class="modal" id="myModal">
                 <button class='close-btn' onclick='closeModal()'>&times;</button>
                 <h2>Favorites</h2>
+            </div>
+        </div>
+        <script src="./js/homepage.js"></script>
+        </section>
+    </body>
+    <body>
+        <div class="modal-wrapper" id="modalWrapper2">
+            <div class="modal" id="myModal">
+                <button class='close-btn' onclick='closeFav()'>&times;</button>
+                <h2>Randomize</h2>
+                <div id="destinationContainer">
+                  </div>
+                <button id="replaceButton">Try something new!</button>
+            </div>
+        </div>
+        <script src="./js/homepage.js"></script>
+        </section>
+    </body>
+    <body>
+        <div class="modal-wrapper" id="modalWrapper3">
+            <div class="modal" id="myModal">
+                <button class='close-btn' onclick='closeCon()'>&times;</button>
+                <h2>Contact Us</h2>
+                    <form>
+                       <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
+                       <div class="btn">
+                           <input id="submit" type="submit" value="Comment">
+                           <button id="clear">
+                            &#128591;</button>
+                       </div> 
+                    </form>
+                </div>
+                <div class="comments">
+                    <div id="comment-box" value="submit">
+                    </div>
+                </div>
             </div>
         </div>
         <script src="./js/homepage.js"></script>
